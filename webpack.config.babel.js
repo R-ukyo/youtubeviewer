@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import { IgnorePlugin } from 'webpack';
 
 export default (env, args) => {
   const Dotenv = require('dotenv-webpack');
@@ -28,6 +29,7 @@ export default (env, args) => {
     },
     plugins: [
       new Dotenv({ systemvars: true }),
+      new IgnorePlugin(/^\.\/locale$/, /moment$/),
     ],
   };
 };
