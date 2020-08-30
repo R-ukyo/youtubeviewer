@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 
 export default (env, args) => {
+  const Dotenv = require('dotenv-webpack');
   const isProduction = args.mode === 'production';
   const devtool = !isProduction && 'inline-source-map';
   const rules = [
@@ -25,5 +26,8 @@ export default (env, args) => {
       },
       extensions: ['.js', '.jsx'],
     },
+    plugins: [
+      new Dotenv({ systemvars: true }),
+    ],
   };
 };
