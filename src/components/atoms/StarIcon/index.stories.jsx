@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 `;
 
 export default {
-  title: 'molecules/StarIcon',
+  title: 'atoms/StarIcon',
   decorators: [(storyFn) => <Wrapper>{storyFn()}</Wrapper>]
 };
 
