@@ -9,10 +9,14 @@ New issueから書けます。
 https://www.techpit.jp/courses/109/curriculums/112/sections/839/parts/3036
 
 storybook起動  
-`npm run storybook`
+```
+npm run storybook
+```
 
 express起動  
-`npm start`
+```
+npm start
+```
 
 webpack build  
 ```
@@ -21,4 +25,6 @@ npm run build:dev
 ```
 
 webpack watch  
-`npm run watch`
+```
+npm run watch
+```
