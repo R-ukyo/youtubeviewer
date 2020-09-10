@@ -15,8 +15,10 @@ express起動
 `npm start`
 
 webpack build  
-`npm run build`
-`npm run build:dev`
+```
+npm run build
+npm run build:dev
+```
 
 webpack watch  
 `npm run watch`
