@@ -14,6 +14,7 @@ export default (env, args) => {
   ];
 
   return {
+    devtool,
     entry: './src/entries/app.jsx',
     output: {
       path: path.join(__dirname, './public/js/'),
