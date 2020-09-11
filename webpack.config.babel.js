@@ -3,7 +3,8 @@ import path from 'path';
 import { IgnorePlugin } from 'webpack';
 
 export default (env, args) => {
-  const Dotenv = require('dotenv-webpack');
+  // dotenv-webpackが何故か機能しないのでコメントアウト
+  // const Dotenv = require('dotenv-webpack');
   const isProduction = args.mode === 'production';
   const devtool = !isProduction && 'inline-source-map';
   const rules = [
@@ -29,7 +30,7 @@ export default (env, args) => {
       extensions: ['.js', '.jsx'],
     },
     plugins: [
-      new Dotenv({ systemvars: true }),
+      // new Dotenv(),
       new IgnorePlugin(/^\.\/locale$/, /moment$/),
     ],
   };

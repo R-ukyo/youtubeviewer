@@ -1,6 +1,7 @@
 const express = require('express');
 const { google } = require('googleapis');
 const { readFavoriteIds, writeFavoriteIds } = require('../utils/favorite');
+require('dotenv').config();
 
 const { YOUTUBE_API_KEY } = process.env;
 
