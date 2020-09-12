@@ -4,8 +4,15 @@
 # build時のキャッシュ
 /node_modules/.cache/
 
+# app.js
 /public/js/app.js
 /public/js/app.js.map
 
 # 環境変数
 .env
+
+# お気に入りID
+favoriteIds.json
+
+# node_modules
+node_modules/
