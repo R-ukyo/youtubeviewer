@@ -12,7 +12,9 @@ const rootEl = document.getElementById('root');
 ReactDOM.render(
   <>
     <GlobalStyle />
-    <App />
+    <FavoriteProvider>
+      <App />
+    </FavoriteProvider>
   </>,
   rootEl,
 );
