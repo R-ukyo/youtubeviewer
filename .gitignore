@@ -5,6 +5,7 @@
 /node_modules/.cache/
 
 /public/js/app.js
+/public/js/app.js.map
 
 # 環境変数
 .env
