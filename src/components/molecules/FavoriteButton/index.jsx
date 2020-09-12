@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-
 import axios from 'axios';
 import FavoriteContext from '~/contexts/FavoriteContext';
 import StartIcon from '~/components/atoms/StarIcon';
